@@ -18,8 +18,7 @@ public class CommentService {
 
 
     public Comment save(CommentsDto commentsDto){
-        Comment comment = commentRepository.save(mapToComment(commentsDto));
-        return comment;
+        return commentRepository.save(mapToComment(commentsDto));
     }
 
     public Comment mapToComment(CommentsDto commentsDto){
